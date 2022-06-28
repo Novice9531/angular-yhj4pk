@@ -10,9 +10,10 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 @NgModule({
   imports: [
     BrowserModule,
-    HttpClientModule,
+    
     CommonModule,
-    FormsModule
+    FormsModule,
+    
   ],
   declarations: [
     AppComponent,
