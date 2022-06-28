@@ -5,16 +5,19 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     CommonModule,
     FormsModule
   ],
   declarations: [
     AppComponent,
-    HeroFormComponent
+    HeroFormComponent,
+    TopBarComponent
   ],
   providers: [],
   bootstrap: [ AppComponent ]
