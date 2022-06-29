@@ -15,7 +15,7 @@
       </div>
 
       <div class="form-group">
-        <label for="alterEgo">Address</label>
+        <label for="alterEgo">Email Address</label>
         <input type="text" class="form-control" id="alterEgo"
                [(ngModel)]="model.alterEgo" name="alterEgo">
       </div>
@@ -43,24 +43,23 @@
   </div>
 
   <div [hidden]="!submitted">
-    <h2>You submitted the following:</h2>
+    <h2>You are submitting the following:</h2>
     <div class="row">
-      <div class="col-xs-3">Name</div>
+      <div class="col-xs-3">Full Name:</div>
       <div class="col-xs-9">{{ model.name }}</div>
     </div>
     <div class="row">
-      <div class="col-xs-3">Address</div>
+      <div class="col-xs-3">Email:</div>
       <div class="col-xs-9">{{ model.alterEgo }}</div>
     </div>
     <div class="row">
-      <div class="col-xs-3">Gender</div>
+      <div class="col-xs-3">Gender:</div>
       <div class="col-xs-9">{{ model.power }}</div>
     </div>
     <br>
     <button type="button" class="btn btn-primary" (click)="submitted=false">Edit</button>
-    <form action="src/index.html">
-      <input type="submit" value="Back" />
-  </form>
+    <button type="button" class="btn btn-primary" (click)="onSubmit()">Done</button>
+  
   </div>
 </div>
 

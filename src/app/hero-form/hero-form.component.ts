@@ -10,7 +10,7 @@ import { Hero } from '../hero';
 export class HeroFormComponent {
 
   powers = ['Male', 'Female',
-            'Other'];
+            'Do Not Specify'];
 
   model = new Hero(18, '', this.powers[0], '');
 

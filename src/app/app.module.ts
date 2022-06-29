@@ -8,12 +8,10 @@ import { HeroFormComponent } from './hero-form/hero-form.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { enableRipple } from '@syncfusion/ej2-base';
 
-enableRipple(true);
-
 @NgModule({
   imports: [
     BrowserModule,
-    MenuModule,
+    
     CommonModule,
     FormsModule,
     
