@@ -12,6 +12,22 @@ body {
   margin: 0;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 61%;
+  height: 68px;
+  background-color: #199634;
+  padding: 16px;
+  display: flex;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -72,12 +88,12 @@ label {
 /* Button */
 .button, button {
   display: inline-flex;
-  align-items: center;
+  align-items: left;
   padding: 8px 16px;
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color: #1976d2;
+  background-color: #cccccc;
   color: white;
   border: none;
 }
@@ -109,12 +125,12 @@ label {
 app-top-bar {
   width: 100%;
   height: 68px;
-  background-color: #1976d2;
+  background-color: #199634;
   padding: 16px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: left;
 }
 
 app-top-bar h1 {
